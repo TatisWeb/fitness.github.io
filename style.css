@@ -16,7 +16,7 @@
 
  html {
   font-family:  'Montserrat', sans-serif;
-  font-size: 2.5px;
+  font-size: 10px;
   /*font-size: calc(2.5px + (10-5) * ((100vh - 420px)/ (1600 -420)));*/
  }
 
@@ -28,7 +28,7 @@ body{
 .container {
  margin: 0 auto;
  height: auto;
- max-width: 120rem ;
+ max-width: 170rem ;
  padding-left: 2rem;
  padding-right: 2rem;
 }
@@ -37,14 +37,16 @@ a {
   text-decoration: none;
 }
 
+
+
 .footer{
   padding: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  width : auto;
-  height: 25rem;
-  margin-top: 5rem;
+  width :  160rem;
+  height: 100%;
+  margin-top: 10rem;
 }
 
 .footer__dev{
@@ -76,7 +78,7 @@ a {
 .contact-girl{
   position: absolute;
   height: 100rem;
-  margin-right: -25rem;
+  margin-right: rem;
   right: 0;
   top: -20rem;
 }
@@ -98,6 +100,14 @@ a {
   color: var(--main-color);
 }
 
+.contact-content {
+ margin-top: 3rem;
+ display: flex;
+ flex-direction: column;
+ width: 160rem;
+ height: 100%;
+}
+
 
 .contact{
   position: relative;
@@ -105,7 +115,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 70%;
+  width: 80%;
   height: 60rem;
   background-color: white;
   margin: 0 auto;
@@ -182,6 +192,16 @@ a {
 
 /* section training */
 
+.training {
+  margin-top: 3rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  width: 160rem;
+  height: 100%;
+ }
+
 .side-left-bottom{
   width: 50rem;
 }
@@ -235,7 +255,7 @@ a {
 .training__traid h6{
   margin-top: 10rem;
   font-size: 7rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-color);
   text-align: center;
 }
@@ -246,42 +266,42 @@ a {
 .fitness__subtitle-top-left{
   position: absolute;
   margin-top: -35rem;
-  margin-left: 12rem;
+  margin-left: 7rem;
 }
 
 .fitness__subtitle-mid-left {
   position: absolute;
   margin-top: -15rem;
-  margin-left: 20rem;
+  margin-left: 15rem;
 }
 
 .fitness__subtitle-bottom-left {
   position: absolute;
   margin-top: 10rem;
-  margin-left: 10rem;
+  margin-left: 5rem;
 }
 
 .fitness__subtitle-top-right{
   position: absolute;
   margin-top: -35rem;
-  margin-left: 105rem;
+  margin-left: 85rem;
   white-space: nowrap;
 }
 
 .fitness__subtitle-mid-right{
   position: absolute;
   margin-top: -15rem;
-  margin-left: 120rem;
+  margin-left: 100rem;
 }
 
 .fitness__subtitle-bottom-right{
   position: absolute;
   margin-top: 10rem;
-  margin-left: 120rem;
+  margin-left: 100rem;
 }
 
 .training__content > span p:first-child{
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--text-color);
   font-weight: 900;
 }
@@ -290,8 +310,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: auto;
-  width:auto;
+  height: 100%;
+  width: 100%;
   justify-items: center;
   position: relative;
 }
@@ -312,7 +332,7 @@ a {
   transform: skew(50deg);
 }
 .fitness__par{
-  width: 80rem;
+  max-width: 80rem;
   height: 12rem;
   background: linear-gradient(to right, #F6EFD2, yellow);
   transform: skew(-50deg);
@@ -323,11 +343,7 @@ a {
   left: calc(50% - (50% / 2));
 }
 
-.training{
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
+
 .training__title{
  margin: 10rem;
  display: flex;
@@ -360,6 +376,18 @@ a {
   right:0;
 }
 
+/* card section */
+
+.card-content{
+ margin-top: 50rem;
+ display: flex;
+ position: relative;
+ flex-direction: column;
+ width: 160rem;
+ height: 100%;
+}
+
+
 .items-cards{
  width: 160rem;
  display: flex;
@@ -377,6 +405,7 @@ a {
  flex-direction: column;
  align-items: center;
 }
+
 .vip{
  width: 48rem;
  height: 78rem;
@@ -446,14 +475,14 @@ a {
  white-space: nowrap;
  line-height: 3rem;
 }
-.card-price h2{
+.element-card h2{
  white-space: nowrap;
- margin-top: 50rem;
+ margin-top: 20rem;
  font-size: 6rem;
  color: var(--text-color);
  font-weight: 500;
 }
-.card-price i{
+.element-card i{
  color: var(--main-color);
 }
 
@@ -566,6 +595,7 @@ a {
 /* main intro */
 
 
+
 .intro-btn { 
  padding-top: 2.5rem;
  margin-top: -30rem;
@@ -645,13 +675,26 @@ a {
  z-index: 1;
 }
 
-/* adaptive for mobile */
+.intro-main {
+  width: 100%;
+  height: 100%;
+  width: 160rem;
+}
 
-@media (max-width: 430px){
+
+/* adaptive for mobile */
+@media (min-width: 319px){
  
+ .intro-main,.footer,.wrapper,.contact-content, .training,.card-content,.items-cards,.element-card,.zona {
+  max-width: 60rem;
+ }
  
   html {
     font-size: 6px;
+  }
+  
+  .container {
+   max-width: 60rem;
   }
   
   .header-menu{
@@ -664,7 +707,7 @@ a {
  .intro-main{
    display: flex;
    flex-direction: column;
-  height: 120rem;
+   height: 120rem;
    width: 0 auto;
    margin-top: -10rem;
  }
@@ -741,10 +784,11 @@ a {
   display: flex;
   flex-direction : column;
   justify-content: flex-start;
-  width : 100vw;
+  width : 100%;
 }
 .element-card h2{
   font-size: 5rem;
+  text-align: center;
 }
 .element-card p{
   margin-top: -3rem;
@@ -794,6 +838,8 @@ a {
   margin-top: 80rem;
   margin-left: 0;
 }
+
+
 .training__content{
   margin-top: -12rem;
 }
@@ -810,7 +856,7 @@ a {
 }
 
 .training__traid{
-  width: 100vw;
+  width: 100%;
   display:flex;
   flex-direction: column;
 }
@@ -818,7 +864,10 @@ a {
 .training__traid p,h2 {
   white-space: wrap;
   margin: 5rem 0 5rem 0;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+.training__traid h6 {
+ font-size: 4rem;
 }
 
 .training__form{
