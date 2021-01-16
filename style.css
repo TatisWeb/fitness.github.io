@@ -712,12 +712,12 @@ a {
 }
 
 /* Main-media grid */
-@media (max-width: 300px){
+@media (max-width: 400px){
  html {font-size: 4px;}
 }
 
 /* Main-media grid */
-@media (min-width: 400px) {
+@media (min-width: 410px) {
  html {font-size: 5.5px;}
 }
 /* Main-media grid */
