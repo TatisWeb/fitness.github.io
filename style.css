@@ -780,23 +780,23 @@ mark{
 }
 /* Main-media grid */
 @media (min-width: 767px){
- html {font-size: 9px;}
+ html {font-size: 6px;}
 }
 
 @media (min-width: 809px) {
-html {font-size: 11px;}
+html {font-size: 6px;}
 }
 
 @media (min-width: 979px) {
-  html {font-size: 12px;}
+  html {font-size: 6px;}
 }
 
 @media (min-width: 1365px){
- html{font-size: 12px;}
+ html{font-size: 10px;}
 }
 
 @media (min-width: 1800px){
- html{font-size: 13px;}
+ html{font-size: 11px;}
 }
 
 @media (min-width: 2200px){
