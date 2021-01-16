@@ -767,7 +767,7 @@ mark{
 
 /
 /* Main-media grid */
-@media (max-width: 350px){
+@media (mix-width: 319px){
  html {font-size: 4px;}
 }
 /* Main-media grid */
