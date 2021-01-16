@@ -765,6 +765,7 @@ mark{
   width: 160rem;
 }
 
+/
 /* Main-media grid */
 @media (max-width: 350px){
  html {font-size: 4px;}
@@ -780,19 +781,24 @@ mark{
 }
 /* Main-media grid */
 @media (min-width: 767px){
- html {font-size: 5px;}
+ html {font-size: 4.5px;}
 }
 
 @media (min-width: 809px) {
-html {font-size: 5px;}
+html {font-size: 4.9px;}
 }
 
 @media (min-width: 1023px) {
-  html {font-size: 6.5px;}
+  html {font-size: 6px;}
 }
 
+@media (min-width: 1279px) {
+  html {font-size: 7px;}
+}
+
+
 @media (min-width: 1365px){
- html{font-size: 9px;}
+ html{font-size: 8px;}
 }
 
 @media (min-width: 1800px){
@@ -802,6 +808,7 @@ html {font-size: 5px;}
 @media (min-width: 2200px){
  html{font-size: 15px;}
 }
+
 
 /* adaptive for mobile */
 @media (max-width: 430px){
