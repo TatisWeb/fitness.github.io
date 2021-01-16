@@ -6,6 +6,12 @@
     <title>Фитнес в Санкт-Петербурге</title>
     <link rel="stylesheet" href="style.css">
      <llink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+     <!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
    <header  class="header">
@@ -37,7 +43,7 @@
   <section class="intro">
   <div class="container">
    <div  class="intro-main">
-   <img src="intro.jpg">
+   <img src="intro.jpg" alt="интро герл">
    
     
    <div class="main-text">
@@ -67,7 +73,7 @@
    </div>
    
   <div class="btn__intro">
-  <a class="btn intro-btn" href="#">Посмотреть абонементы</a>
+  <a class="btn intro-btn"  href="#ex1" rel="modal:open">Купить абонемент</a>
   
   </div>
   </div>
@@ -114,7 +120,7 @@
    </div>
    
    <div class="btn-info">
-     <a class="btn btn-zone" href="#">Посмотреть абонементы</a>
+     <a href="#ex1" rel="modal:open" class="btn btn-zone" >Купить абонемент</a>
      </div>
      <img class="side-logo-left" src="SideLeft.jpg">
    </div>
@@ -152,7 +158,7 @@
     <p class="item-price">6.900₽</p>
     <p class="item-description">За месяц посещений</p>
    
-    <a class="btn item-btn-economy" href="#">Посмотреть абонементы</a>
+    <a href="#ex2" rel="modal:open" class="btn item-btn-economy" >Купить абонемент</a>
   
    </div>
    
@@ -175,7 +181,7 @@
     <p class="item-price">12.500₽</p>
     <p class="item-description">За месяц посещений</p>
     
-     <a class="btn item-btn-standart" href="#">Посмотреть абонементы</a>
+     <a href="#ex2" rel="modal:open" class="btn item-btn-standart" href="#">Купить абонемент</a>
     
    </div>
    
@@ -198,7 +204,7 @@
     <p class="item-price">29.900₽</p>
     <p class="item-description">За месяц посещений</p>
     
-     <a class="btn item-btn-vip" href="#">Посмотреть абонементы</a>
+     <a href="#ex2" rel="modal:open" class="btn item-btn-vip" href="#">Купить абонемент</a>
     
    </div>
    
@@ -251,7 +257,7 @@
        
       <input class="training__input-tel" placeholder="Телефон*:">   
       
-      <a href="#" >записаться на тренировку</a>
+      <a href="#ex1" rel="modal:close">записаться на тренировку</a>
        
      </div>
      
@@ -338,7 +344,7 @@
           <a class="footer__dev" href="https://tatisweb.ru" >Developed by Sergey Tarasenko | 2020 </a>
           
           
-          <a class="footer__btn" href="#">заказать тренировку</a>
+          <a href="#ex1" rel="modal:open" class="footer__btn" >заказать тренировку</a>
         
         
         </div>
@@ -348,7 +354,37 @@
         </div>
       </footer> 
 
+<!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal">
+ 
+ <div class="modal-bay">
+    
+   <div class="training__form modal__form">
+       
+      <input class="training__input-name" placeholder="Имя*:"> 
+       
+      <input class="training__input-tel" placeholder="Телефон*:">   
+      
+      <a href="#" rel="modal:close" >записаться на тренировку</a>
+       
+     </div>
+     
+ 
+ </div>
+ 
+ <a href="#" rel="modal:close">Close</a>
+</div>
 
+
+<div id="ex2" class="modal">
+  <div class="modal-bay">
+
+<iframe width="350" height="250" src="https://widget.qiwi.com/widgets/middle-widget-300x300?publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPuFn8nd3ADwm8kuuY6RHRz9cZMsvEF2HxQ2E3M2uaTGfHYpMfSsq6trkbeB28kZbA7GLHGNRk2qyAkKB9jp5dA9DnhXAJTRU5Q5mEQo9oR" allowtransparency="true" scrolling="no" frameborder="0"></iframe>
+  </div>
+</div>
+
+  <script src="js/modal.js"></script>
+  <script src="js/jquery.leanModal.min.js"></script>
 
 </body>
 
