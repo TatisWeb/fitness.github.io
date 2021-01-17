@@ -754,7 +754,7 @@ mark{
 }
 
 /* Main-media grid */
-@media (min-width: 350px){
+@media (min-width: 300px){
  html {font-size: 4px;}
 }
 /* Main-media grid */
