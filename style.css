@@ -943,23 +943,22 @@ html {font-size: 5px;}
 
 .economy,.vip,.standart{
   margin-bottom: 25rem;
-  padding-top: 7rem;
+  padding: 4rem 3rem 4rem 3rem;
   
 }
 .item-btn-economy{
-  margin-top: 65rem;
+  margin-top: 70rem;
   margin-left: 0rem;
 }
 .item-btn-vip{
-  margin-top: 85rem;
+  margin-top: 86rem;
   margin-left: 0;
 }
 
 .item-btn-standart{
-  margin-top: 80rem;
+  margin-top: 83rem;
   margin-left: 0;
 }
-
 
 .training__content{
   margin-top: -12rem;
