@@ -397,7 +397,7 @@ a {
 
 .standart {
  width: 48rem;
- height: 73rem;
+ height: 75rem;
  border-radius: 1rem;
  background-color: white;
  color: black;
@@ -421,27 +421,24 @@ a {
 
 .economy {
  width: 48rem;
- height: 60rem;
+ height: 63rem;
  border-radius: 1rem;
  background-color: white;
  color: black;
  display: flex;
  flex-direction: column;
  align-items: center;
- transition: 1.2s;
+ transition: .5s;
 }
 
 .economy:hover{
  box-shadow: 0 0 25px var(--main-color);
- transform: scale(1.1);
 }
 .standart:hover {
  box-shadow: 0 0 25px var(--main-color);
- transform: scale(1.1);
 }
 .vip:hover {
  box-shadow: 0 0 25px var(--main-color);
- transform: scale(1.1);
 }
 
 
@@ -532,41 +529,29 @@ mark{
 .pullf{
  background-image: url("pullf.jpg");
  background-size: cover;
- transition: 1s;
+ transition: 0.5s;
 }
-.pullf:hover{
- transform: scale(1.2);
-}
+
 .saunaf{
  background-image: url("saunaf.jpg");
  background-size: cover;
- transition: 1s;
+ transition: 0.5s;
  display: block;
-}
-.saunaf:hover{
- transform: scale(1.2);
- display: inline-block;
- overflow: hidden;
- text-decoration: none;
 }
 
 .yogaf{
  background-image: url("yogaf.jpg");
  background-size: cover;
- transition: 1s;
+ transition: 0.5s;
 }
-.yogaf:hover{
- transform: scale(1.2);
-}
+
 
 .cardiof{
  background-image: url("cardiof.jpeg");
  background-size: cover;
- transition: 1s;
+ transition: 0.5s;
 }
-.cardiof:hover{
- transform: scale(1.2);
-}
+
 
 .zona-bottom{
  position: absolute;
@@ -632,7 +617,7 @@ mark{
  top: 0;
 }
 .item-btn-economy {
- margin-top: 65rem;
+ margin-top: 66rem;
 }
 .item-btn-standart{
  margin-top: 79rem;
@@ -959,6 +944,7 @@ html {font-size: 5px;}
   margin-top: 83rem;
   margin-left: 0;
 }
+
 
 .training__content{
   margin-top: -12rem;
