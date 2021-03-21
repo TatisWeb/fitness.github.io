@@ -268,7 +268,7 @@ a {
 .fitness__subtitle-top-left{
   position: absolute;
   margin-top: -35rem;
-  margin-left: 15rem;
+  margin-left: 20rem;
 }
 
 .fitness__subtitle-mid-left {
@@ -695,7 +695,7 @@ mark{
 .object-intro2 {
  text-align: center;
  margin-top: -20rem;
- margin-left: 6rem;
+ margin-left: 70rem;
  position: absolute;
  z-index: 1;
 }
