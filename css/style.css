@@ -248,6 +248,10 @@ textarea.form__input {
 	height: 100%;
 }
 .form__price::after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 	content: "";
 	 display: none;
 	 width: 100%;
@@ -258,7 +262,7 @@ textarea.form__input {
 	 top:0;
 	 left:0;
 	 z-index: 1000;
-	 padding: 2rem 2rem;
+	 padding: 2rem 0rem 2rem 0rem;
 	transition: all 0.5s ease 0s;
 }
 .form__price._sending::after {
@@ -270,6 +274,7 @@ textarea.form__input {
 	font-weight: 700;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
+	margin-left: 1rem;
 	color: #c1c1c3;
 }
 .form__item {
@@ -279,11 +284,10 @@ textarea.form__input {
 .form__input__price {
  background: transparent;
  color: white;
- margin-left: rem;
 	height: 5rem;
 	padding: 0;
 	border: none;
-	border-bottom: .4rem solid black;
+	border-bottom: .1px solid dimgray;
 	width: 100%;
 	font-size: 2.5rem;
 	transition: all 0.5s ease 0s;
@@ -291,11 +295,11 @@ textarea.form__input {
 }
 
 .form__input__price:focus {
-	box-shadow: 0px 5px 5px -5px #00FF43;
+	box-shadow: 0px 5px 5px -4px var(--main-color);
 	
 }
 .form__input__price._error {
- 	box-shadow: 0 5px 5px -5px red;
+ 	box-shadow: 0 5px 5px -4px red;
 }
 
 textarea.form__input__price {
@@ -304,7 +308,7 @@ textarea.form__input__price {
 	background: transparent;
 	color: white;
 	border: none;
-	border-bottom: .4rem solid black;
+	border-bottom: .1px solid dimgray;
 	width: 100%;
 }
 
@@ -321,14 +325,20 @@ textarea.form__input__price {
 }
 
 .checkbox__label__price {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	line-height: 140%;
 	display: inline-flex;
 	align-items: center;
 	position: relative;
 	cursor: pointer;
 	color: whitesmoke;
+	
 }
+ @media(min-width: 768px){
+   .checkbox__label__price {
+    text-wrap: nowrap;
+   }
+ }
 .checkbox__label__price::before {
 	content: "";
 	align-self: flex-start;
