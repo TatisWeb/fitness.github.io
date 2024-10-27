@@ -633,7 +633,7 @@ p:before {
 
 .intro {
   grid-area: intro;
-  height: 83vh;
+  height: 80rem;
   width: auto;
   padding-left: 1rem;
   display: grid;
@@ -688,10 +688,13 @@ p:before {
 
 @media(min-width:568px) {
   .intro__content {
-    top: -27rem;
+    top: -30rem;
   }
-
-
+}
+@media(min-width:868px) {
+  .intro__content {
+    top: -17rem;
+  }
 }
 
 .intro__photo {
