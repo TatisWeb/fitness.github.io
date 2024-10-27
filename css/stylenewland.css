@@ -2,8 +2,11 @@
 @import url('/css/style.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
 html {
-  font-family: 'Montserrat', 'Roboto', sans-serif;
+  font-family: 'Manrope', 'Montserrat', 'Roboto', sans-serif;
   font-size: 7px;
   perspective: 900;
   overflow-y: scroll;
@@ -11,6 +14,7 @@ html {
 
 body {
   background: #010101;
+
 }
 
 section {
@@ -64,6 +68,7 @@ path:hover {
   --decor-color: #5600A1;
   --ui-color: #151719;
   --ui-color: #17171c;
+  --nav-color: #00ecfb;
 }
 
 /* #151719 cool color #009DCF #067893 blue very nice */
@@ -106,7 +111,7 @@ p {
 /* Main-media grid */
 @media (max-width: 320px) {
   html {
-    font-size: 5px;
+    font-size: 6px;
   }
 }
 
@@ -120,13 +125,13 @@ p {
 /* Main-media grid */
 @media (min-width: 767px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
 
 @media (min-width: 809px) {
   html {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 
@@ -628,7 +633,7 @@ p:before {
 
 .intro {
   grid-area: intro;
-  height: 40rem;
+  height: 83vh;
   width: auto;
   padding-left: 1rem;
   display: grid;
@@ -637,26 +642,21 @@ p:before {
   grid-template-rows: 5fr 5fr;
   grid-template-columns: 5fr 5fr;
   margin-top: 3rem;
-  background: radial-gradient(#0D2241A9, #000);
+  background: radial-gradient(#203a43A9, #000);
 }
 
 .intro__content__dev {
   margin-top: 1rem;
   padding-left: 0rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   text-align: left;
   color: var(--main-color);
-
 }
 
-.main-section {
-  height: 83vh;
-}
-
-@media(min-width:768px) {
-  .main-section {
-    height: auto;
+@media(min-width: 568px) {
+  .intro {
+    height: 52rem;
   }
 }
 
@@ -671,32 +671,27 @@ p:before {
 }
 
 .btn-bay {
-
+  margin-top: 3rem;
+  margin-left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 42rem;
-  transition: .4s;
 }
 
 .btn-bay a {
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   transition: .4s;
 }
 
-@media(min-width:768px) {
+@media(min-width:568px) {
   .intro__content {
-    top: -17rem;
+    top: -27rem;
   }
 
-  .btn-bay {
-    padding-top: 12rem;
-    margin-left: -70rem;
 
-  }
 }
 
 .intro__photo {
@@ -742,12 +737,11 @@ p:before {
 }
 
 .text-intro_hi,
-.text-intro_red,
 .text-intro_design {
   line-height: 5.5rem;
   color: #FFFFFF;
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 700;
   white-space: nowrap;
   text-align: left;
 }
@@ -758,16 +752,17 @@ p:before {
 }
 
 .text-intro_red {
+  line-height: 5.5rem;
   opacity: 0;
-  width: 14.5ch;
+  width: 100%;
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 800;
   color: black;
   background-color: var(--main-color);
   white-space: nowrap;
   overflow: hidden;
-  border-right: 4px solid orange;
-  animation: flashing 0.75s step-end infinite, text-print 5s steps(15);
+  border-right: 4px solid red;
+  animation: flashing 0.75s step-end infinite, text-print 5s steps(14);
   /*animation: flashing 0.75s step-end infinite, text-unprint 4s steps(14);*/
 }
 
@@ -794,7 +789,7 @@ p:before {
 
   to {
     opacity: 1;
-    width: 14.3ch;
+    width: 13.5ch;
   }
 }
 
@@ -883,7 +878,7 @@ p:before {
 }
 
 .menu-logo-text {
-  font-weight: 500;
+  font-weight: 800;
   color: #DBFCFF;
   font-size: 2rem;
   text-transform: uppercase;
@@ -975,7 +970,7 @@ p:before {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 3.5rem;
-  font-weight: 500;
+  font-weight: 800;
   z-index: 999999;
   margin-bottom: 0rem;
   transition: .5s;
@@ -1051,7 +1046,7 @@ p:before {
 .menu__pc a {
   color: var(--main-color);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   transition: .4s;
 }
 
@@ -1072,7 +1067,7 @@ p:before {
      */
 .menu__pc a:hover {
   color: #FFF;
-  font-weight: 700;
+  font-weight: 800;
   transform: scale(1.1);
 }
 
@@ -1149,7 +1144,7 @@ p:before {
   background: green;
   text-align: center;
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 800;
   padding: 10px;
 }
 
@@ -1206,7 +1201,8 @@ p:before {
   font-size: 2rem;
   color: var(--main-color);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  
 }
 
 .footer-content {
@@ -1792,7 +1788,7 @@ ul li input[type=checkbox]:checked ~ i:after {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 568px) {
   .about_me {
     flex-direction: row;
   }
@@ -1862,8 +1858,8 @@ ul li input[type=checkbox]:checked ~ i:after {
 }
 
 .img_about_me {
-  margin: 2rem 4rem 2rem 3rem;
-  height: 45rem;
+  margin: 2rem 2rem 2rem 2rem;
+  height: 47rem;
   border-radius: 0rem;
   z-index: 1;
   position: relative;
