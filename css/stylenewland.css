@@ -1786,12 +1786,6 @@ ul li input[type=checkbox]:checked ~ i:after {
   grid-area: aboutme;
 }
 
-.about__text h6 {
-  color: var(--main-color);
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 1rem 1rem 0rem 2rem;
-}
 
 @media (max-width: 800px) {
   .about_me {
@@ -1799,7 +1793,7 @@ ul li input[type=checkbox]:checked ~ i:after {
   }
 
   .about_me p {
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 }
 
@@ -1856,16 +1850,25 @@ ul li input[type=checkbox]:checked ~ i:after {
   flex-direction: column;
   flex-wrap: wrap;
   grid-area: aboutme__text;
-
 }
 
 .img__content__text h5 {
   font-size: 6rem;
   color: white;
-  font-weight: 500;
-  margin: 2rem;
+  font-weight: 700;
+  margin-left: 2rem;
   white-space: nowrap;
-  width: 25rem;
+}
+.about__text h6 {
+  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 1rem 0rem 2rem;
+}
+@media(max-width: 568px){
+  .img__content__text h5 {
+   margin-top: 2rem;
+  }
 }
 .img__container{
   width: 100%;
