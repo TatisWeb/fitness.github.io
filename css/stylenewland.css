@@ -1888,7 +1888,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 
  @media(max-width: 568px) {
    .img__content {
-     max-width: 80%;
+     max-width: 90%;
    }
    .img_about_me{
      width: 100%;
