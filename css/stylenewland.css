@@ -1874,24 +1874,31 @@ ul li input[type=checkbox]:checked ~ i:after {
 
 .img_about_me {
   margin: 2rem 2rem 2rem 2rem;
-  height: 47rem;
   border-radius: 0rem;
   z-index: 1;
   position: relative;
   border-radius: 15px;
   box-shadow: 5px 5px 5px var(--main-color);
 }
- @media(max-width: 568px){
-  .img_about_me {
-   width: 92%;
-   }
- }
 
-
-.img-content {
+.img__content {
   display: flex;
   flex-direction: column;
 }
+ @media(max-width: 568px) {
+   .img__content {
+     width: 92%;
+   }
+   .img_about_me{
+     width: 100%;
+   }
+ }
+   @media(min-width: 568px) {
+   .img_about_me {
+     height: 47rem;
+   }
+ }
+ 
 
 /* Block services */
 
